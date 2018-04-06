@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nerds index page</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="page-navigation__logo">
+          <img src="http://placehold.it/160x65" width="160" height="65" alt="Студия дизайна NERDS"> <!-- Заменить на inline-svg -->
+        </a>
+        <ul class="page-navigation__list">
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Студия
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Клиенты
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="catalog.html">
+              Магазин
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <ul class="page-navigation__shop-list">
+          <li class="page-navigation__shop-item">
+            <a class="page-navigation__shop-link" href="#">
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        NERDS — дизайн-студия из Краснодара
+      </h1>
+      <!-- СЛАЙДЕР -->
+      <section class="info-slider">
+        <h2 class="visually-hidden">
+          Описание преимуществ студии
+        </h2>
+        <div class="info-slider__controls">
+        </div>
+        <ul class="info-slider__list">
+          <li class="info-slider__item active"> <!-- Фоном будут эти красивые картинки с гаджетами -->
+            <h3 class="info-slider__item-title">
+              Долго, дорого, скурпулезно.
+            </h3>
+            <p class="info-slider__item-desc">
+              Математически выверенный дизайн для вашего сайта или мобильного приложения.
+            </p>
+            <a class="info-slider__item-link btn" href="#">
+              Узнать больше
+            </a>
+          </li>
+          <li class="info-slider__item"> <!-- Фоном будут эти красивые картинки с гаджетами -->
+            <h3 class="info-slider__item-title">
+              Любим математику как никто другой
+            </h3>
+            <p class="info-slider__item-desc">
+              Никакого креатива, только математические формулы для расчета идеальных пропорций.
+            </p>
+            <a class="info-slider__item-link btn" href="#">
+              Узнать больше
+            </a>
+          </li>
+          <li class="info-slider__item"> <!-- Фоном будут эти красивые картинки с гаджетами -->
+            <h3 class="info-slider__item-title">
+              Только ночь, только хардкор
+            </h3>
+            <p class="info-slider__item-desc">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+            </p>
+            <a class="info-slider__item-link btn" href="#">
+              Узнать больше
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- УСЛУГИ -->
+      <section class="services">
+        <h2 class="visually-hidden">
+          Виды выполняемых работ
+        </h2>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <h3 class="services__item-subject">
+              Веб-сайты
+            </h3>
+            <p class="services__item-lead">
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a class="services__item-link services__item-link--red btn" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="services__list-item">
+            <h3 class="services__item-subject">
+              Приложения
+            </h3>
+            <p class="services__item-lead">
+              Покорите топ-10 приложений в AppStore и Google Play
+            </p>
+            <a class="services__item-link services__item-link--green btn" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="services__list-item">
+            <h3 class="services__item-subject">
+              Презентации
+            </h3>
+            <p class="services__item-lead">
+              Вы даже не подозреваете, насколько вы изумительны!
+            </p>
+            <a class="services__item-link services__item-link--yellow btn" href="#">
+              Заказать
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- О СТУДИИ -->
+      <section class="about-studio">
+        <h2 class="visually-hidden">
+          Коротко о студии
+        </h2>
+        <div class="about-studio__description">
+          <p class="about-studio__description-text about-studio__description-text--lead">
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.
+          </p>
+          <p class="about-studio__description-text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+            Работаем не покладая рук, как роботы.
+          </p>
+        </div>
+        <div class="about-studio__summary">
+          <div class="about-studio__summary-wrap">
+            <p class="about-studio__summary-title">
+              Выполняем заказы на разработку:
+            </p>
+            <ul class="about-studio__summary-list">
+              <li class="about-studio__summary-list-item">
+                Веб-сайтов любой сложности
+              </li>
+              <li class="about-studio__summary-list-item">
+                Мобильных приложений для iOS и Android
+              </li>
+              <li class="about-studio__summary-list-item">
+                Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </div>
+          <table class="about-studio__summary-statistics">
+            <caption class="about-studio__summary-caption">С 2004 года любим точность во всем:</caption>
+            <tr class="about-studio__summary-statistics-percentage">
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr class="about-studio__summary-statistics-legend">
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- РАБОТЫ СТУДИИ -->
+      <section class="works">
+        <h2 class="visually-hidden">Проекты студии</h2>
+        <ul class="works__list">
+          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="works__item-link" href="#" aria-label="Html Academy"></a> <!-- Добавить ссылку на интенсив -->
+          </li>
+          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="works__item-link" href="#" aria-label="Barbershop Borodinski"></a>
+          </li>
+          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="works__item-link" href="#" aria-label="Pink"></a>
+          </li>
+          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="works__item-link" href="#" aria-label="Mishka"></a>
+          </li>
+        </ul>
+      </section>
+      <!-- КАРТА И ОБРАТНАЯ СВЯЗЬ -->
+      <section class="map-and-contacts">
+        <h2 class="visually-hidden">Как найти студию</h2>
+        <div class="map">
+          <img class="map-image" src="http://placehold.it/1440x416" width="1440" height="416" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
+          <!-- <iframe></iframe> -->
+        </div>
+        <div class="contacts">
+          <p class="contacts__caption">
+            NЁRDS DESIGN STUDIO
+          </p>
+          <address class="contacts__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <p class="contacts__telephone">
+            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <a class="contacts__link btn" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section class="popup">
+        <h2 class="popup__title">Напишите нам</h2>
+        <button class="popup__close-btn" type="button" aria-label="Закрыть форму"></button>
+        <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
+          <p class="popup__form-group">
+            <label class="popup__form-label" for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup__form-group">
+            <label class="popup__form-label" for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </p>
+          <p class="popup__form-group popup__form-group--wide">
+            <label class="popup__form-label" for="message">Текст письма:</label>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="popup__form-btn btn" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="#" aria-label="Студия ВКонтакте"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--fb" href="#" aria-label="Студия в Facebook"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--inst" href="#" aria-label="Студия в Instagram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="suggestions">
+        <p class="suggestions__slogan">Давайте дружить, это выгодно!</p>
+        <p class="suggestions__promo">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
