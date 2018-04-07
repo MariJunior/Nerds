@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nerds catalog</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="page-navigation__logo" href="index.html">
+          <img src="http://placehold.it/160x65" width="160" height="65" alt="Студия дизайна NERDS">
+          <!-- Заменить на inline-svg -->
+        </a>
+        <ul class="page-navigation__list">
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Студия
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Клиенты
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link current">
+              Магазин
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <ul class="page-navigation__shop-list">
+          <li class="page-navigation__shop-item">
+            <a class="page-navigation__shop-link" href="#">
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-title">
+        Магазин готовых шаблонов
+      </h1>
+    </header>
+    <main class="page-main">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры выбора товаров</h2>
+        <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filters__group">
+            <legend class="filters__group-title">Стоимость:</legend>
+            <div class="filters__range"> <!-- Блок фильтра цены -->
+              <div class="filters__range-controls"> <!-- Прогресс бар -->
+                <div class="filters__range-controls-scale"> <!-- Полная ширина -->
+                  <div class="filters__range-controls-bar"></div> <!-- Выбранный диапазон -->
+                </div>
+                <!-- Ползунки -->
+                <div class="filters__range-controls-toggle filters__range-controls-toggle--min"></div> <!-- Ползунок минимальной цены -->
+                <div class="filters__range-controls-toggle filters__range-controls-toggle--max"></div> <!-- Ползунок максимальной цены -->
+              </div>
+              <div class="filters__range-inputs"> <!-- Поля для ввода цены -->
+                <label class="filters__range-inputs-label" for="min-price">От
+                  <input class="filters__range-inputs-field" type="text" name="min-price" id="min-price" value="0">
+                </label>
+                <label class="filters__range-inputs-label" for="max-price">До
+                  <input class="filters__range-inputs-field" type="text" name="max-price" id="max-price" value="15 000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filters__group">
+            <legend class="filters__group-title">Сетка:</legend>
+            <ul class="filters__grids-list">
+              <li class="filters__grids-list-item">
+                <input type="radio" name="adaptive-grid" id="adaptive-grid" checked>
+                <label for="adaptive-grid">Адаптивная</label>
+              </li>
+              <li class="filters__grids-list-item">
+                <input type="radio" name="fixed-grid" id="fixed-grid">
+                <label for="fixed-grid">Фиксированная</label>
+              </li>
+              <li class="filters__grids-list-item">
+                <input type="radio" name="responsive-grid" id="responsive-grid">
+                <label for="responsive-grid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__group">
+            <legend class="filters__group-title">Особенности:</legend>
+            <ul class="filters__features-list">
+              <li class="filters__features-list-item">
+                <input type="checkbox" name="slider-feature" id="slider-feature" checked>
+                <label for="slider-feature">Слайдер</label>
+              </li>
+              <li class="filters__features-list-item">
+                <input type="checkbox" name="advantage-block-feature" id="advantage-block-feature">
+                <label for="advantage-block-feature">Блок преимуществ</label>
+              </li>
+              <li class="filters__features-list-item">
+                <input type="checkbox" name="news-feature" id="news-feature" checked>
+                <label for="news-feature">Новости</label>
+              </li>
+              <li class="filters__features-list-item">
+                <input type="checkbox" name="galery-feature" id="galery-feature">
+                <label for="galery-feature">Галерея</label>
+              </li>
+              <li class="filters__features-list-item">
+                <input type="checkbox" name="cart-feature" id="cart-feature">
+                <label for="cart-feature">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Найденные по выбранным параметрам шаблоны</h2>
+        <div class="sorting-methods">
+          <h3 class="visually-hidden">Настройка параметров сортировки результатов</h3>
+          <p class="sorting-methods__title">Сортировать:</p>
+          <ul class="sorting-methods__list">
+            <li class="sorting-methods__list-item">
+              <a class="sorting-methods__item-link active" href="#">По цене</a>
+            </li>
+            <li class="sorting-methods__list-item">
+              <a class="sorting-methods__item-link" href="#">По типу</a>
+            </li>
+            <li class="sorting-methods__list-item">
+              <a class="sorting-methods__item-link" href="#">По названию</a>
+            </li>
+          </ul>
+          <div class="sorting-methods__controls">
+            <a class="sorting-methods__controls-btn sorting-methods__controls-btn--decrease" href="#" aria-label="По убыванию"></a>
+            <a class="sorting-methods__controls-btn sorting-methods__controls-btn--gain" href="#" aria-label="По возрастанию"></a>
+          </div>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--sedona">
+              <div class="catalog__card-header">
+                <!-- Декоративный блок в верхней части, имитирующий окно браузера, будет менять цвет при наведении на картинку -->
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы Седоны"> <!-- Подумать над figure + figcaption.visually-hidden -->
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">Седона</h3>
+                <p class="catalog__card-desc">Информационный сайт для туристов</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--pink">
+              <div class="catalog__card-header">
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы Pink">
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">Pink App</h3>
+                <p class="catalog__card-desc">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--barbershop">
+              <div class="catalog__card-header">
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы Barbershop">
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">Barbershop</h3>
+                <p class="catalog__card-desc">Сайт салоны красоты. Для мужчин, да.</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--mishka">
+              <div class="catalog__card-header">
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы Mishka">
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">Mishka</h3>
+                <p class="catalog__card-desc">Интернет-магазин вязаных игрушек</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--aplus">
+              <div class="catalog__card-header">
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы A Plus">
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">A Plus</h3>
+                <p class="catalog__card-desc">Лендинг курсов повышения квалификации</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__list-item">
+            <article class="catalog__card catalog__card--kvast">
+              <div class="catalog__card-header">
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+                <span class="catalog__card-header-item"></span>
+              </div>
+              <img class="catalog__card-thumbnail" src="http://placehold.it/360x576" width="360" height="576" alt="Вид главной страницы Кваст">
+              <div class="catalog__card-info">
+                <h3 class="catalog__card-name">Кваст</h3>
+                <p class="catalog__card-desc">Промо-сайт производителя крафтового кваса</p>
+                <a class="catalog__card-price" href="">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="catalog__pagination">
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-btn catalog__pagination-btn--prev hidden" href="#">Предыдущая</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link current" href="#">1</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">2</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link" href="#">3</a>
+          </li>
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-btn catalog__pagination-btn--next" href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <!-- КАРТА И ОБРАТНАЯ СВЯЗЬ -->
+      <section class="map-and-contacts">
+        <h2 class="visually-hidden">Как найти студию</h2>
+        <div class="map">
+          <img class="map-image" src="http://placehold.it/1440x416" width="1440" height="416" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
+          <!-- <iframe></iframe> -->
+        </div>
+        <div class="contacts">
+          <p class="contacts__caption">
+            NЁRDS DESIGN STUDIO
+          </p>
+          <address class="contacts__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <p class="contacts__telephone">
+            тел.
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <a class="contacts__link btn" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section class="popup">
+        <h2 class="popup__title">Напишите нам</h2>
+        <button class="popup__close-btn" type="button" aria-label="Закрыть форму"></button>
+        <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
+          <p class="popup__form-group">
+            <label class="popup__form-label" for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup__form-group">
+            <label class="popup__form-label" for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </p>
+          <p class="popup__form-group popup__form-group--wide">
+            <label class="popup__form-label" for="message">Текст письма:</label>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="popup__form-btn btn" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="socials-and-suggestions">
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" aria-label="Студия ВКонтакте"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#" aria-label="Студия в Facebook"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--inst" href="#" aria-label="Студия в Instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="suggestions">
+          <p class="suggestions__slogan">Давайте дружить, это выгодно!</p>
+          <p class="suggestions__promo">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

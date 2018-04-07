@@ -47,10 +47,14 @@
       </h1>
       <!-- СЛАЙДЕР -->
       <section class="info-slider">
+        <!-- Добавить обёртку-центровщик -->
         <h2 class="visually-hidden">
           Описание преимуществ студии
         </h2>
         <div class="info-slider__controls">
+          <i class="info-slider__controls-item active"></i>
+          <i class="info-slider__controls-item"></i>
+          <i class="info-slider__controls-item"></i>
         </div>
         <ul class="info-slider__list">
           <li class="info-slider__item active"> <!-- Фоном будут эти красивые картинки с гаджетами -->
@@ -175,24 +179,26 @@
           </table>
         </div>
       </section>
-      <!-- РАБОТЫ СТУДИИ -->
-      <section class="works">
-        <h2 class="visually-hidden">Проекты студии</h2>
-        <ul class="works__list">
-          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
-            <a class="works__item-link" href="#" aria-label="Html Academy"></a> <!-- Добавить ссылку на интенсив -->
+      <!-- ПАРТНЁРЫ СТУДИИ -->
+      <section class="parners">
+        <h2 class="visually-hidden">Партнёры студии</h2>
+        <ul class="parners__list">
+          <li class="parners__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="parners__item-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a>
           </li>
-          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
-            <a class="works__item-link" href="#" aria-label="Barbershop Borodinski"></a>
+          <li class="parners__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="parners__item-link" href="#" aria-label="Barbershop Borodinski"></a>
           </li>
-          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
-            <a class="works__item-link" href="#" aria-label="Pink"></a>
+          <li class="parners__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="parners__item-link" href="#" aria-label="Pink"></a>
           </li>
-          <li class="works__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
-            <a class="works__item-link" href="#" aria-label="Mishka"></a>
+          <li class="parners__list-item"> <!-- Логотипы будут в ссылках через inline-svg -->
+            <a class="parners__item-link" href="#" aria-label="Mishka"></a>
           </li>
         </ul>
       </section>
+    </main>
+    <footer class="page-footer">
       <!-- КАРТА И ОБРАТНАЯ СВЯЗЬ -->
       <section class="map-and-contacts">
         <h2 class="visually-hidden">Как найти студию</h2>
@@ -208,7 +214,8 @@
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
           <p class="contacts__telephone">
-            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            тел.
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <a class="contacts__link btn" href="#">Напишите нам</a>
         </div>
@@ -232,25 +239,25 @@
           <button class="popup__form-btn btn" type="submit">Отправить</button>
         </form>
       </section>
-    </main>
-    <footer class="page-footer">
-      <div class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="#" aria-label="Студия ВКонтакте"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="#" aria-label="Студия в Facebook"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--inst" href="#" aria-label="Студия в Instagram"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="suggestions">
-        <p class="suggestions__slogan">Давайте дружить, это выгодно!</p>
-        <p class="suggestions__promo">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+      <section class="socials-and-suggestions">
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" aria-label="Студия ВКонтакте"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#" aria-label="Студия в Facebook"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--inst" href="#" aria-label="Студия в Instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="suggestions">
+          <p class="suggestions__slogan">Давайте дружить, это выгодно!</p>
+          <p class="suggestions__promo">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
