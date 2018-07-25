@@ -1,5 +1,29 @@
-/* ===== GLOBAL ===== */
+/* ===== ШРИФТЫ ===== */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+}
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+}
+
+/* ===== ГЛОБАЛЬНЫЕ СТИЛИ ===== */
 *,
 *::before,
 *::after {
@@ -49,11 +73,252 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
-/* ===== HEADER ===== */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1200px;
+}
+
+.block-with-divider {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 54px;
+  line-height: 1.125;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn--red {
+  background-color: #fb565a;
+}
+
+.btn--green {
+ background-color: #00ca74;
+}
+
+.btn--yellow {
+ background-color: #efc84a;
+}
+
+/* ===== ХЕДЕР ===== */
 .page-header {
   background-color: #eeeeee;
 }
 
-.page-header__wrap {
+.page-navigation__list,
+.page-navigation__shop-list {
+  list-style: none;
+}
 
+.page-navigation__link,
+.page-navigation__shop-link {
+  font-weight: 500;
+  line-height: 1.875;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* ===== СЛАЙДЕР ===== */
+.info-slider {
+  background-color: #eeeeee;
+}
+
+.info-slider__list {
+  list-style: none;
+}
+
+.info-slider__item {
+  background-repeat: no-repeat;
+  background-position: 500px 0;
+}
+
+.info-slider__item--design {
+  background-image: url("../img/slide1.png");
+}
+
+.info-slider__item--proprotions {
+  background-image: url("../img/slide2.png");
+}
+
+.info-slider__item--night-hardcore {
+  background-image: url("../img/slide3.png");
+}
+
+.info-slider__item-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1;
+  color: #000000;
+}
+
+/* ===== УСЛУГИ ===== */
+.services__list {
+  list-style: none;
+}
+
+.services__list-item {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.services__list-item--sites {
+  background-image: url("../img/illustration-1.jpg");
+}
+
+.services__list-item--apps {
+  background-image: url("../img/illustration-2.jpg");
+}
+
+.services__list-item--presentations {
+  background-image: url("../img/illustration-3.jpg");
+}
+
+.services__item-subject {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services__item-link {
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+/* ===== О СТУДИИ ===== */
+
+.about-studio__description-text--lead {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+  color: #000000;
+}
+
+.about-studio__description-text--subtitle {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-studio__description-list {
+  list-style: none;
+}
+/* FIXME: сделать декоративные маркеры списка через ::before */
+
+.about-studio__statistics {
+  background-image: url("../img/nerds-illustration.jpg");
+  background-repeat: no-repeat;
+}
+
+.about-studio__statistics-caption {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-studio__statistics-table-percentage {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 0.222;
+  color: #000000;
+}
+
+.about-studio__statistics-table-legend {
+  line-height: 1.125;
+}
+
+
+/* ===== ПАРТНЁРЫ ===== */
+.parners__list {
+  list-style: none;
+}
+
+/* FIXME: сделать вертикальные разделители с помощью ::after */
+/* .parners__list-item:not(:last-child) {
+  border-right: 2px solid #eeeeee;
+} */
+
+.parners__link {
+  opacity: 0.2;
+}
+
+
+/* ===== КАРТА ===== */
+.map {
+  width: 100%;
+  height: 417px;
+  background-color: #f1efe8;
+  background-image: url("../img/map-with-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 -150px;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contacts__caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.667;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts__address,
+.contacts__telephone,
+.contacts__telephone a {
+  line-height: 1.125;
+  color: #666666;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__link {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* ===== ОБРАТНАЯ СВЯЗЬ ===== */
+.popup__title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+  color: #000000;
+}
+
+.popup__form-label {
+  font-weight: 700;
+  line-height: 1.125;
+  color: #000000;
+}
+
+.popup__form-btn {
+  padding-left: 83px;
+  padding-right: 83px;
+  border: none;
+}
+
+/* ===== СОЦСЕТИ ===== */
+.socials__list {
+  list-style: none;
+}
+
+.socials__link {
+  background-color: #e1e1e1;
+}
+
+.suggestions__slogan {
+  font-weight: 700;
+  font-style: 36px;
+  line-height: 1;
+  color: #000000;
+}
+
+.suggestions__promo {
+  line-height: 1.375;
+  color: #444444;
 }

@@ -2,8 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Nerds. Главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Nёrds - главная</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -55,14 +54,14 @@
         <h2 class="visually-hidden">
           Описание преимуществ студии
         </h2>
-        <div class="container">
+        <div class="info-slider__wrap container">
           <div class="info-slider__controls">
             <i class="info-slider__controls-item active"></i>
             <i class="info-slider__controls-item"></i>
             <i class="info-slider__controls-item"></i>
           </div>
           <ul class="info-slider__list">
-            <li class="info-slider__item active"> <!-- FIXME: Фоном будут эти красивые картинки с гаджетами -->
+            <li class="info-slider__item info-slider__item--design active">
               <h3 class="info-slider__item-title">
                 Долго, дорого, скурпулезно.
               </h3>
@@ -73,7 +72,7 @@
                 Узнать больше
               </a>
             </li>
-            <li class="info-slider__item"> <!-- FIXME: Фоном будут эти красивые картинки с гаджетами -->
+            <li class="info-slider__item info-slider__item--proprotions">
               <h3 class="info-slider__item-title">
                 Любим математику как никто другой
               </h3>
@@ -84,7 +83,7 @@
                 Узнать больше
               </a>
             </li>
-            <li class="info-slider__item"> <!-- FIXME: Фоном будут эти красивые картинки с гаджетами -->
+            <li class="info-slider__item info-slider__item--night-hardcore">
               <h3 class="info-slider__item-title">
                 Только ночь, только хардкор
               </h3>
@@ -100,12 +99,12 @@
       </section>
       <div class="container">
         <!-- УСЛУГИ -->
-        <section class="services">
+        <section class="services block-with-divider">
           <h2 class="visually-hidden">
             Виды выполняемых работ
           </h2>
           <ul class="services__list">
-            <li class="services__list-item"> <!-- FIXME: Иллюстрирующие таблички сделать фоном или псевдоэлементом -->
+            <li class="services__list-item services__list-item--sites">
               <h3 class="services__item-subject">
                 Веб-сайты
               </h3>
@@ -116,7 +115,7 @@
                 Заказать
               </a>
             </li>
-            <li class="services__list-item"> <!-- FIXME: Иллюстрирующие таблички сделать фоном или псевдоэлементом -->
+            <li class="services__list-item services__list-item--apps">
               <h3 class="services__item-subject">
                 Приложения
               </h3>
@@ -127,7 +126,7 @@
                 Заказать
               </a>
             </li>
-            <li class="services__list-item"> <!-- FIXME: Иллюстрирующие таблички сделать фоном или псевдоэлементом -->
+            <li class="services__list-item services__list-item--presentations">
               <h3 class="services__item-subject">
                 Презентации
               </h3>
@@ -141,7 +140,7 @@
           </ul>
         </section>
         <!-- О СТУДИИ -->
-        <section class="about-studio">
+        <section class="about-studio block-with-divider">
           <h2 class="visually-hidden">
             Коротко о студии
           </h2>
@@ -170,7 +169,7 @@
           </div>
           <div class="about-studio__statistics"> <!-- FIXME: Логотип сделать фоном блока -->
             <table class="about-studio__statistics-table">
-              <caption class="about-studio__statistics-table-caption">С 2004 года любим точность во всем:</caption>
+              <caption class="about-studio__statistics-caption">С 2004 года любим точность во всем:</caption>
               <tr class="about-studio__statistics-table-percentage">
                 <td>146<sup>%</sup></td>
                 <td>100<sup>%</sup></td>
@@ -185,7 +184,7 @@
           </div>
         </section>
         <!-- ПАРТНЁРЫ СТУДИИ -->
-        <section class="parners">
+        <section class="parners block-with-divider">
           <h2 class="visually-hidden">Партнёры студии</h2>
           <ul class="parners__list">
             <li class="parners__list-item">
@@ -213,12 +212,12 @@
       </div>
     </main>
     <footer class="page-footer">
-      <!-- КАРТА И ОБРАТНАЯ СВЯЗЬ -->
+      <!-- КАРТА И КОНТАКТЫ -->
       <section class="map-and-contacts">
         <h2 class="visually-hidden">Как найти студию</h2>
         <div class="map">
-          <img class="map__image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
-          <div class="map__container" id="mymap"></div>
+          <!-- <img class="map__image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
+          <div class="map__container" id="mymap"></div> -->
         </div>
         <div class="contacts">
           <p class="contacts__caption">
@@ -260,17 +259,17 @@
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="socials__link socials__link--vk" href="#">
+                <a class="socials__link" href="#">
                   <img class="socials__logo" src="img/vk-icon.svg" width="26" height="15" alt="Студия ВКонтакте">
                 </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link socials__link--fb" href="#">
+                <a class="socials__link" href="#">
                   <img class="socials__logo" src="img/fb-icon.svg" width="12" height="22" alt="Студия в Facebook">
                 </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link socials__link--inst" href="#">
+                <a class="socials__link" href="#">
                   <img class="socials__logo" src="img/insta-icon.svg" width="21" height="21" alt="Студия в Instagram">
                 </a>
               </li>
