@@ -81,16 +81,16 @@
             <!-- Блок фильтра типа сетки -->
             <fieldset class="filters__group">
               <legend class="filters__group-title">Сетка:</legend>
-              <ul class="filters__grids-list">
-                <li class="filters__grids-list-item">
+              <ul class="filters__list">
+                <li class="filters__list-item">
                   <input type="radio" name="adaptive-grid" id="adaptive-grid" checked>
                   <label for="adaptive-grid">Адаптивная</label>
                 </li>
-                <li class="filters__grids-list-item">
+                <li class="filters__list-item">
                   <input type="radio" name="fixed-grid" id="fixed-grid">
                   <label for="fixed-grid">Фиксированная</label>
                 </li>
-                <li class="filters__grids-list-item">
+                <li class="filters__list-item">
                   <input type="radio" name="responsive-grid" id="responsive-grid">
                   <label for="responsive-grid">Резиновая</label>
                 </li>
@@ -99,24 +99,24 @@
             <!-- Блок фильтра специальных элементов -->
             <fieldset class="filters__group">
               <legend class="filters__group-title">Особенности:</legend>
-              <ul class="filters__features-list">
-                <li class="filters__features-list-item">
+              <ul class="filters__list">
+                <li class="filters__list-item">
                   <input type="checkbox" name="slider-feature" id="slider-feature" checked>
                   <label for="slider-feature">Слайдер</label>
                 </li>
-                <li class="filters__features-list-item">
+                <li class="filters__list-item">
                   <input type="checkbox" name="advantage-block-feature" id="advantage-block-feature">
                   <label for="advantage-block-feature">Блок преимуществ</label>
                 </li>
-                <li class="filters__features-list-item">
+                <li class="filters__list-item">
                   <input type="checkbox" name="news-feature" id="news-feature" checked>
                   <label for="news-feature">Новости</label>
                 </li>
-                <li class="filters__features-list-item">
+                <li class="filters__list-item">
                   <input type="checkbox" name="galery-feature" id="galery-feature">
                   <label for="galery-feature">Галерея</label>
                 </li>
-                <li class="filters__features-list-item">
+                <li class="filters__list-item">
                   <input type="checkbox" name="cart-feature" id="cart-feature">
                   <label for="cart-feature">Корзина</label>
                 </li>
@@ -134,7 +134,7 @@
             <p class="sorting-methods__title">Сортировать:</p>
             <ul class="sorting-methods__list">
               <li class="sorting-methods__list-item">
-                <a class="sorting-methods__item-link active" href="#">По цене</a>
+                <a class="sorting-methods__item-link active">По цене</a>
               </li>
               <li class="sorting-methods__list-item">
                 <a class="sorting-methods__item-link" href="#">По типу</a>
@@ -144,7 +144,7 @@
               </li>
             </ul>
             <div class="sorting-methods__controls">
-              <a class="sorting-methods__controls-btn sorting-methods__controls-btn--decrease" href="#" aria-label="По убыванию"></a>
+              <a class="sorting-methods__controls-btn sorting-methods__controls-btn--decrease active" aria-label="По убыванию"></a>
               <a class="sorting-methods__controls-btn sorting-methods__controls-btn--gain" href="#" aria-label="По возрастанию"></a>
             </div>
           </div>
@@ -261,20 +261,20 @@
           </ul>
           <!-- Пагинация -->
           <ul class="catalog__pagination">
-            <li class="catalog__pagination-item">
-              <a class="catalog__pagination-btn catalog__pagination-btn--prev visually-hidden" href="#">Предыдущая</a>
+            <li class="catalog__pagination-item visually-hidden">
+              <a class="catalog__pagination-btn catalog__pagination-btn--speccial catalog__pagination-btn--prev" href="#">Предыдущая</a>
             </li>
             <li class="catalog__pagination-item">
-              <a class="catalog__pagination-link current" href="#">1</a>
+              <a class="catalog__pagination-btn current" href="#">1</a>
             </li>
             <li class="catalog__pagination-item">
-              <a class="catalog__pagination-link" href="#">2</a>
+              <a class="catalog__pagination-btn" href="#">2</a>
             </li>
             <li class="catalog__pagination-item">
-              <a class="catalog__pagination-link" href="#">3</a>
+              <a class="catalog__pagination-btn" href="#">3</a>
             </li>
             <li class="catalog__pagination-item">
-              <a class="catalog__pagination-btn catalog__pagination-btn--next" href="#">Следующая</a>
+              <a class="catalog__pagination-btn catalog__pagination-btn--speccial catalog__pagination-btn--next" href="#">Следующая</a>
             </li>
           </ul>
         </section>
@@ -285,8 +285,8 @@
       <section class="map-and-contacts">
         <h2 class="visually-hidden">Как найти студию</h2>
         <div class="map">
-          <img class="map-image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
-          <div class="map__container" id="mymap"></div>
+          <!-- <img class="map-image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
+          <div class="map__container" id="mymap"></div> -->
         </div>
         <div class="contacts">
           <p class="contacts__caption">
