@@ -219,32 +219,34 @@
           <!-- <img class="map__image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
           <div class="map__container" id="mymap"></div> -->
         </div>
-        <div class="contacts">
-          <p class="contacts__caption">
-            Nёrds design studio
-          </p>
-          <address class="contacts__address">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </address>
-          <p class="contacts__telephone">
-            тел.
-            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          </p>
-          <a class="contacts__link btn btn--red" href="#">Напишите нам</a>
+        <div class="contacts-wrap container">
+          <div class="contacts">
+            <p class="contacts__caption">
+              Nёrds design studio
+            </p>
+            <address class="contacts__address">
+              191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </address>
+            <p class="contacts__telephone">
+              тел.
+              <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            </p>
+            <a class="contacts__link btn btn--red" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
       <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-      <section class="popup">
+      <section class="popup popup--hidden">
         <h2 class="popup__title">Напишите нам</h2>
         <button class="popup__close-btn" type="button" aria-label="Закрыть форму"></button>
         <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
           <p class="popup__form-group">
             <label class="popup__form-label" for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
           </p>
           <p class="popup__form-group">
             <label class="popup__form-label" for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="email@example.com">
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
           </p>
           <p class="popup__form-group popup__form-group--wide">
             <label class="popup__form-label" for="message">Текст письма:</label>

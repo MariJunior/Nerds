@@ -417,11 +417,8 @@ input[type="radio"].visually-hidden {
   line-height: 1.125;
 }
 
-
 /* ===== ПАРТНЁРЫ ===== */
 .parners {
-  /* padding-top: 45px; */
-  /* padding-bottom: 45px; */
   margin-bottom: 80px;
 }
 
@@ -442,7 +439,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 260px;
-  /* text-align: center; */
 }
 
 /* FIXME: сделать вертикальные разделители с помощью ::after */
@@ -599,9 +595,14 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
-/* ===== КАРТА ===== */
+/* ===== КОНТАКТЫ ===== */
+.map-and-contacts {
+  position: relative;
+}
+
 .map {
   width: 100%;
+  min-width: 1200px;
   height: 417px;
   background-color: #f1efe8;
   background-image: url("../img/map-with-marker.png");
@@ -609,12 +610,23 @@ input[type="radio"].visually-hidden {
   background-position: 0 -150px;
 }
 
-/* ===== КОНТАКТЫ ===== */
+.contacts-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 55px;
+}
+
 .contacts {
+  padding: 47px 50px;
+  width: 320px;
   background-color: #ffffff;
 }
 
 .contacts__caption {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.667;
@@ -630,7 +642,13 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__address {
+  margin-bottom: 18px;
   font-style: normal;
+}
+
+.contacts__telephone {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .contacts__link {
@@ -640,10 +658,26 @@ input[type="radio"].visually-hidden {
 
 /* ===== ОБРАТНАЯ СВЯЗЬ ===== */
 .popup {
+  position: fixed;
+  left: 50%;
+  bottom: 130px;
+  padding-top: 73px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+  width: 960px;
   background-color: #ffffff;
+  transform: translateX(-50%);
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+}
+
+.popup--hidden {
+  display: none;
 }
 
 .popup__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 500;
   font-size: 45px;
   line-height: 1;
@@ -660,6 +694,109 @@ input[type="radio"].visually-hidden {
   padding-left: 83px;
   padding-right: 83px;
   border: none;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.popup__close-btn::before,
+.popup__close-btn::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  right: 0;
+  border-radius: 3px;
+  background-color: #ff555a;
+}
+
+.popup__close-btn::before {
+  transform: rotate(45deg);
+}
+
+.popup__close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.popup__close-btn:hover,
+.popup__close-btn:focus {
+  opacity: 1;
+}
+
+.popup__close-btn:active {
+  opacity: 0.1;
+}
+
+.popup__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popup__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 35px;
+  width: 360px;
+}
+
+.popup__form-group--wide {
+  margin-bottom: 47px;
+  width: 760px;
+}
+
+.popup__form-label {
+  margin-bottom: 12px;
+}
+
+.popup__form-group input,
+.popup__form-group textarea {
+  padding-left: 15px;
+  color: #000000;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.popup__form-group input::placeholder,
+.popup__form-group textarea::placeholder{
+  color: rgba(0,0,0,0.5);
+}
+
+.popup__form-group input:hover,
+.popup__form-group textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.popup__form-group input:focus,
+.popup__form-group textarea:focus {
+  color: #000000;
+  border-color: #000000;
+  outline: none;
+}
+
+.popup__form-group input:focus::placeholder,
+.popup__form-group textarea:focus::placeholder{
+  color: #000000;
+}
+
+.popup__form-group input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.popup__form-group textarea {
+  padding-top: 10px;
+  min-height: 118px;
 }
 
 /* ===== СОЦСЕТИ ===== */
