@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Nёrds - каталог шаблонов</title>
+    <title>Каталог Nёrds</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -49,14 +49,14 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="container">
+      <div class="filters-and-catalog-wrap container">
         <!-- ФИЛЬТРЫ -->
         <section class="filters">
           <h2 class="visually-hidden">Фильтры выбора товаров</h2>
           <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
              <!-- Блок фильтра цены -->
-            <fieldset class="filters__group">
-              <legend class="filters__group-title">Стоимость:</legend>
+            <fieldset class="filters__group filters__group--special">
+              <legend class="filters__group-title filters__group-title--special">Стоимость:</legend>
               <div class="filters__range">
                 <!-- Прогресс бар -->
                 <div class="filters__range-controls">
@@ -83,16 +83,16 @@
               <legend class="filters__group-title">Сетка:</legend>
               <ul class="filters__list">
                 <li class="filters__list-item">
-                  <input type="radio" name="adaptive-grid" id="adaptive-grid" checked>
-                  <label for="adaptive-grid">Адаптивная</label>
+                  <input class="visually-hidden filters__list-item-radio" type="radio" name="layout-type" id="adaptive-layout" checked>
+                  <label class="filters__list-item-label" for="adaptive-layout">Адаптивная</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="radio" name="fixed-grid" id="fixed-grid">
-                  <label for="fixed-grid">Фиксированная</label>
+                  <input class="visually-hidden filters__list-item-radio" type="radio" name="layout-type" id="fixed-layout">
+                  <label class="filters__list-item-label" for="fixed-layout">Фиксированная</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="radio" name="responsive-grid" id="responsive-grid">
-                  <label for="responsive-grid">Резиновая</label>
+                  <input class="visually-hidden filters__list-item-radio" type="radio" name="layout-type" id="responsive-layout">
+                  <label class="filters__list-item-label" for="responsive-layout">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -101,24 +101,24 @@
               <legend class="filters__group-title">Особенности:</legend>
               <ul class="filters__list">
                 <li class="filters__list-item">
-                  <input type="checkbox" name="slider-feature" id="slider-feature" checked>
-                  <label for="slider-feature">Слайдер</label>
+                  <input class="visually-hidden filters__list-item-checkbox" type="checkbox" name="features" id="slider-feature" checked>
+                  <label class="filters__list-item-label" for="slider-feature">Слайдер</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="checkbox" name="advantage-block-feature" id="advantage-block-feature">
-                  <label for="advantage-block-feature">Блок преимуществ</label>
+                  <input class="visually-hidden filters__list-item-checkbox" type="checkbox" name="features" id="advantage-block-feature">
+                  <label class="filters__list-item-label" for="advantage-block-feature">Блок преимуществ</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="checkbox" name="news-feature" id="news-feature" checked>
-                  <label for="news-feature">Новости</label>
+                  <input class="visually-hidden filters__list-item-checkbox" type="checkbox" name="features" id="news-feature" checked>
+                  <label class="filters__list-item-label" for="news-feature">Новости</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="checkbox" name="galery-feature" id="galery-feature">
-                  <label for="galery-feature">Галерея</label>
+                  <input class="visually-hidden filters__list-item-checkbox" type="checkbox" name="features" id="galery-feature">
+                  <label class="filters__list-item-label" for="galery-feature">Галерея</label>
                 </li>
                 <li class="filters__list-item">
-                  <input type="checkbox" name="cart-feature" id="cart-feature">
-                  <label for="cart-feature">Корзина</label>
+                  <input class="visually-hidden filters__list-item-checkbox" type="checkbox" name="features" id="cart-feature">
+                  <label class="filters__list-item-label" for="cart-feature">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -288,6 +288,7 @@
           <!-- <img class="map-image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
           <div class="map__container" id="mymap"></div> -->
         </div>
+        <div class="contacts-wrap container">
         <div class="contacts">
           <p class="contacts__caption">
             Nёrds design studio
@@ -301,9 +302,10 @@
           </p>
           <a class="contacts__link btn btn--red" href="#">Напишите нам</a>
         </div>
+        </div>
       </section>
       <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-      <section class="popup">
+      <section class="popup popup--hidden">
         <h2 class="popup__title">Напишите нам</h2>
         <button class="popup__close-btn" type="button" aria-label="Закрыть форму"></button>
         <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
@@ -324,7 +326,8 @@
       </section>
       <!-- ССЫЛКИ НА СТРАНИЦЫ В СОЦСЕТЯХ + ПРОМО -->
       <section class="socials-and-suggestions">
-        <div class="container">
+          <h2 class="visually-hidden">Найдите нас в социальных сетях</h2>
+          <div class="socials-wrap container">
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item">
