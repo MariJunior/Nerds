@@ -313,13 +313,84 @@ input[type="radio"].visually-hidden {
   padding-left: 100px;
   width: 960px;
   background-color: #ffffff;
-  transform: translateX(-50%);
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
 }
 
+.popup--no-js {
+  position: static;
+  margin: 0 auto;
+}
+
+@keyframes show-form {
+  0% {
+    transform: scaleY(0) translate(-50%, -100%);
+  }
+  50% {
+    transform: scaleY(1) translate(-50%, 20%);
+  }
+  70% {
+    transform: scaleY(0.8) translate(-50%, 0);
+  }
+  90% {
+    transform: scaleY(1) translate(-50%, 10%);
+  }
+  100% {
+    transform: scaleY(1) translate(-50%, 0);
+  }
+}
+
+@keyframes hide-form {
+  0% {
+    transform: scaleY(1) translate(-50%, 0);
+  }
+  100% {
+    transform: scaleY(0) translate(-50%, -100%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-55%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-45%);
+  }
+}
+
+.popup--show {
+  animation-name: show-form;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+}
+
+.popup--hide {
+  animation-name: hide-form;
+  animation-duration: 250ms;
+
+  animation-fill-mode: forwards;
+}
+
+.popup--error {
+  animation-name: shake;
+  animation-duration: 600ms;
+}
+/*
 .popup--hidden {
   display: none;
-}
+} */
 
 .popup__title {
   margin-top: 0;

@@ -305,21 +305,21 @@
         </div>
       </section>
       <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-      <section class="popup popup--hidden">
+      <section class="popup popup--no-js">
         <h2 class="popup__title">Напишите нам</h2>
         <button class="popup__close-btn" type="button" aria-label="Закрыть форму"></button>
         <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
           <p class="popup__form-group">
             <label class="popup__form-label" for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[A-ZА-ЯЁ][a-zа-яё]{1,}\s[A-ZА-ЯЁ][a-zа-яё]{1,}" required>
           </p>
           <p class="popup__form-group">
             <label class="popup__form-label" for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="email@example.com">
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
           </p>
           <p class="popup__form-group popup__form-group--wide">
             <label class="popup__form-label" for="message">Текст письма:</label>
-            <textarea name="message" id="message" cols="30" rows="4" placeholder="В свободной форме"></textarea>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="В свободной форме" required></textarea>
           </p>
           <button class="popup__form-btn btn btn--red" type="submit">Отправить</button>
         </form>
@@ -357,5 +357,6 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
