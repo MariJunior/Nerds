@@ -240,9 +240,6 @@ input[type="radio"].visually-hidden {
 /* ===== КОНТАКТЫ ===== */
 .map-and-contacts {
   position: relative;
-}
-
-.map {
   width: 100%;
   min-width: 1200px;
   height: 417px;
@@ -250,6 +247,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/map-with-marker.png");
   background-repeat: no-repeat;
   background-position: 0 -150px;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts-wrap {

@@ -215,11 +215,11 @@
       <!-- КАРТА И КОНТАКТЫ -->
       <section class="map-and-contacts">
         <h2 class="visually-hidden">Как найти студию</h2>
-        <div class="map">
-          <!-- <img class="map__image" src="img/map-with-marker.png" width="1725" height="808" alt="Студия находится по адресу г.Санкт-Петербург, ул. Большая Конюшенная, д. 18">
-          <div class="map__container" id="mymap"></div> -->
+        <div class="map" id="map">
+          <h3 class="visually-hidden">Студия на карте</h3>
         </div>
         <div class="contacts-wrap container">
+          <h3 class="visually-hidden">Адрес, контактный телефон и обратная связь</h3>
           <div class="contacts">
             <p class="contacts__caption">
               Nёrds design studio
@@ -285,5 +285,8 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
