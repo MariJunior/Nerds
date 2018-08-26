@@ -1117,6 +1117,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+/* Специальные стили для IE10+ */
+_:-ms-input-placeholder, :root .partners__list {
+  height: 180px;
+}
+
 .partners__list-item {
   position: relative;
 
